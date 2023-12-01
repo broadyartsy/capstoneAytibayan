@@ -14,7 +14,7 @@
                 <option value="all">All</option>
                 <option value="PUBLIC">Public</option>
                 <option value="Akbay">Beneficiaries</option>
-            </select>
+</select>
             <label for="items-per-page">Items per page: </label>
             <select id="items-per-page">
                 <option value="10">10</option>
@@ -47,7 +47,7 @@
                     </thead>
                     <tbody>
                         @foreach($announcement->reverse() as $announcements)
-                        <!--VIEW Announcement-->
+                        <!-------VIEW Announcement------>
                         <div class="modal fade" id="modal_view{{ $announcements->id }}" tabindex="-1" data-backdrop="false" aria-labelledby="#modal_view" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.5)">
                         <div class="modal-dialog">
                             <div class="modal-content">
