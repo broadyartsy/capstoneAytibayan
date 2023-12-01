@@ -1,0 +1,156 @@
+body.programs {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body.programs .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  gap: 20px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+body.programs .box {
+  width: 225px;
+  height: auto;
+  margin: 20px;
+  border: 1px solid #e8d7d7;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+  box-shadow:2px 3px 10px rgba(0,0,0,0.5);
+}
+
+body.programs .box:hover {
+  transform: scale(1.1);
+}
+
+body.programs .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+body.programs img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+body.programs h3 {
+  text-transform: uppercase;
+  font-size: 1.23rem;
+  color: #7bb701;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+body.programs button {
+  font-size: .85rem;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #f0a60f;
+  color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+body.programs button:hover {
+  background-color: #7bb701;
+}
+
+body.programs .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+body.programs .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body.programs #keyInput {
+  display: none;
+  text-align: center; /* Center the elements horizontally */
+  margin-top: 5px; /* Add some space between the boxes and the keyInput div */
+}
+
+#keyInput label {
+  display: block; /* Display the label on a separate line */
+  margin-bottom: 10px; /* Add some space below the label */
+  color: white;
+  font-weight: bold;
+}
+
+#keyInput input[type="text"] {
+  display: block; /* Display the input on a separate line */
+  margin: 0 auto; /* Center the input horizontally */
+  width: 300px; /* Adjust the width as needed */
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 40 20px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#keyInput button {
+  display: block; /* Display the button on a separate line */
+  margin: 20px auto 0; /* Center the button horizontally and add some space on top */
+  background-color: #f0a60f;
+  color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#keyInput button:hover {
+  background-color: #7bb701;
+}
+
+#keyInput .back-button {
+  font-size: 0.75rem; /* Adjust the font size to make the button appear smaller */
+  padding: 5px 10px; /* Adjust the padding to make the button compact */
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  body.programs .container {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: unset;
+  }
+
+  body.programs .logo {
+    margin-bottom: 50px;
+  }
+
+  body.programs .box {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  body.programs button {
+    margin-bottom: 15px;
+  }
+}
+

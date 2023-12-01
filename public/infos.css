@@ -1,0 +1,352 @@
+body.infos {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1efef;
+}
+  
+#about-section {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    flex-wrap: wrap;
+    padding: 20px;
+
+  }
+
+  #about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+  }
+  
+  
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    margin: 20px; /* Add some margin to the logo */
+  }
+  
+  #logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  #program-name {
+    text-transform: uppercase;
+    color: #7bb701;
+    font-size: 2.5rem;
+    font-weight: bold;
+    top:0;
+  }
+  
+
+  #program-location {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  #program-email {
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+#about-image {
+    width: 100%; /* Set the width to 100% to make it responsive */
+    height: 500px; /* Set the fixed height to maintain aspect ratio */
+    object-fit: cover; /* Crop the image to cover the entire container while maintaining aspect ratio */
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow:2px 3px 10px rgba(0,0,0,0.5);
+}
+
+
+#about-program {
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about-content {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.about-content h3 {
+    width: 100px;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: #7bb701;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 20px;
+    display: inline-block; /* Add this line to make the h3 element behave like a block with inline properties */
+    margin: 0 auto; /* Center the h3 element horizontally */
+}
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+#main-container {
+    display: flex;
+}
+
+    #left-container {
+        width: 50%;
+        background-color: #f1efef;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+
+    .box {
+        width: 48%;
+        height: 300px;
+        background-color: white; 
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        
+      
+    }
+
+        .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px; /* Match the border-radius of the .box container */
+    }
+
+        .box h1 {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 1.50rem;
+        color: #171716;
+        margin: 0;
+        line-height: 1;
+        font-weight: bold;
+    }
+
+        .box p {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #7bb701;
+        margin: 0;
+        line-height: 1;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 200px; 
+    }
+
+        .box1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 48%;
+        height: auto;
+        margin-top: 5px; /* Reduce the margin-top */
+        margin-bottom: 5px; /* Reduce the margin-bottom */
+        padding: 10px;
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white; 
+    }
+
+        .box1 h1 {
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #7bb701;
+        text-align: center;
+        font-size: 1.23rem;
+        color: #f2f2f2;
+        margin: 0;
+        line-height: 1;
+        font-weight: bold;
+        
+    }
+
+        .box1 h2 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; /* Make it circular */
+        background-color: #7bb701;
+        font-size: 1.5rem;
+        color: #f2f2f2;
+        margin: 5px;
+        line-height: 30px; /* Set the line-height equal to the height to center the text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .box1 p {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #000000;
+        margin: 0;
+        line-height: 1;
+    }
+
+
+#right-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap value as per your requirement */
+    flex: 1;
+    padding: 30px;
+    background-color: #f1efef;
+    justify-content: space-around;
+
+    }
+    .title h3{
+        width: 100px;
+        font-size: 20px;
+        color: #7bb701;
+        border: none;
+        font-weight: bold;
+        text-align: center;
+        }
+    
+    
+    .project {
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        background-color: white;
+        width: 100%; /* Take up the full width of the container */
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project img {
+        width: 50px; /* Set a fixed width for the images */
+        height: 50px; /* Set a fixed height for the images */
+        object-fit: cover;
+        border: 2px solid #7bb701; /* Add a border to the image */
+        border-radius: 5px; /* Optional: Add border-radius to make the image corners rounded */
+    }
+    
+    .project-content {
+        flex: 1; /* Take up the remaining space */
+        padding-left: 10px; /* Add some left padding between the image and content */
+    }
+    
+    .project h2 {
+        margin: 0;
+        padding: 0 10px;
+        font-size: 13px;
+        color: #7bb701;
+        font-weight: bold;
+    }
+    
+    .project p {
+        margin: 0;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    
+    #inquiry {
+        width: 100%;
+        border: transparent;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    #inquiry_ {
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    
+    #label_ {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    #textbox {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+    }
+    
+    #textbox_m {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding-bottom: 80px;
+    }
+    
+    #button_ {
+        text-align: end;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #send_ {
+        margin: auto;
+        background-color: #f0a60f;
+        color: white;
+        border-radius: 20px;
+        padding: auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+        #logo {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0;
+            text-align: center;
+        }
+    
+        #logo img {
+            width: 80px;
+            height: 80px;
+        }
+    
+        #program-name {
+            font-size: 2rem;
+            margin-top: 10px;
+            text-align: center;
+        }
+    
+        #main-container {
+            flex-direction: column; /* Change to a one-column layout */
+        }
+    
+        #left-container {
+            width: 100%;
+        }
+    
+        .box,
+        .box1,
+        .project {
+            width: 100%;
+        }
+    
+        #right-container {
+            padding: 10px;
+        }
+    }
